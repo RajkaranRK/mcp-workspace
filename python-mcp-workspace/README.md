@@ -11,7 +11,7 @@ Python versions of the MCP servers from the Node.js workspace.
 ## Setup
 
 ```bash
-cd /Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace
+cd /Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -45,11 +45,10 @@ The Bitbucket server supports either an access token or a username plus app
 password.
 
 ```bash
-export BITBUCKET_USERNAME="your-bitbucket-username"
+export BITBUCKET_URL="https://bitbucket.axisb.com"
+export BITBUCKET_USERNAME="FC607387"
 export BITBUCKET_APP_PASSWORD="your-bitbucket-app-password"
-export BITBUCKET_DEFAULT_WORKSPACE="your-workspace"
-export BITBUCKET_DEFAULT_REPO_SLUG="your-repo-slug"
-export REPOSITORIES_ROOT="/Users/rajkaran/Desktop/mcp/mcp-workspace"
+export REPOSITORIES_ROOT="/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
 ```
 
 Alternatively:
@@ -72,9 +71,9 @@ Add these entries inside `mcpServers`:
 {
   "mcpServers": {
     "mongo-mcp-python": {
-      "command": "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/.venv/bin/python",
+      "command": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/.venv/bin/python",
       "args": [
-        "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/mongo_server.py"
+        "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/mongo_server.py"
       ],
       "env": {
         "MONGO_URI": "mongodb://localhost:27017",
@@ -82,25 +81,24 @@ Add these entries inside `mcpServers`:
       }
     },
     "filesystem-mcp-python": {
-      "command": "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/.venv/bin/python",
+      "command": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/.venv/bin/python",
       "args": [
-        "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/filesystem_server.py"
+        "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/filesystem_server.py"
       ],
       "env": {
-        "REPOSITORIES_ROOT": "/Users/rajkaran/Desktop/mcp/mcp-workspace"
+        "REPOSITORIES_ROOT": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
       }
     },
     "bitbucket-mcp-python": {
-      "command": "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/.venv/bin/python",
+      "command": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/.venv/bin/python",
       "args": [
-        "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
+        "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
       ],
       "env": {
-        "BITBUCKET_USERNAME": "your-bitbucket-username",
+        "BITBUCKET_URL": "https://bitbucket.axisb.com",
+        "BITBUCKET_USERNAME": "FC607387",
         "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password",
-        "BITBUCKET_DEFAULT_WORKSPACE": "your-workspace",
-        "BITBUCKET_DEFAULT_REPO_SLUG": "your-repo-slug",
-        "REPOSITORIES_ROOT": "/Users/rajkaran/Desktop/mcp/mcp-workspace"
+        "REPOSITORIES_ROOT": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
       }
     }
   }
