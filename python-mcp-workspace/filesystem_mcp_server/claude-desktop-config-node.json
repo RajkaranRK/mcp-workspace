@@ -1,0 +1,27 @@
+
+{
+  "preferences": {
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": false,
+    "sidebarMode": "chat",
+    "coworkWebSearchEnabled": true,
+    "floatingAtollActive": true
+  },
+  "mcpServers": {
+    "mongo-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/rajkaran/Desktop/mcp/mcp-workspace/mongo-mcp-server/server.js"
+      ]
+    },
+    "filesystem-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/rajkaran/Desktop/mcp/mcp-workspace/filesystem-mcp-server/server.js"
+      ],
+      "env": {
+        "REPOSITORIES_ROOT": "/Users/rajkaran/Desktop/platform-workspace"
+      }
+    }
+  }
+}
