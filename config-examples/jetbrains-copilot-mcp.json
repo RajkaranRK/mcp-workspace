@@ -1,0 +1,39 @@
+{
+  "servers": {
+    "mongo-mcp": {
+      "type": "stdio",
+      "command": "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/.venv/bin/python",
+      "args": [
+        "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/mongo_server.py"
+      ],
+      "env": {
+        "MONGO_URI": "mongodb://localhost:27017",
+        "MONGO_DEFAULT_DATABASE": "users"
+      }
+    },
+    "filesystem-mcp": {
+      "type": "stdio",
+      "command": "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/.venv/bin/python",
+      "args": [
+        "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/filesystem_server.py"
+      ],
+      "env": {
+        "REPOSITORIES_ROOT": "/Users/rajkaran/Desktop/mcp/mcp-workspace"
+      }
+    },
+    "bitbucket-mcp": {
+      "type": "stdio",
+      "command": "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/.venv/bin/python",
+      "args": [
+        "/Users/rajkaran/Desktop/mcp/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
+      ],
+      "env": {
+        "BITBUCKET_USERNAME": "your-bitbucket-username",
+        "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password",
+        "BITBUCKET_DEFAULT_WORKSPACE": "your-workspace",
+        "BITBUCKET_DEFAULT_REPO_SLUG": "your-repo-slug",
+        "REPOSITORIES_ROOT": "/Users/rajkaran/Desktop/mcp/mcp-workspace"
+      }
+    }
+  }
+}

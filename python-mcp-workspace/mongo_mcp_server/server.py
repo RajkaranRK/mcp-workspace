@@ -8,6 +8,12 @@ mcp = FastMCP("mongo-mcp")
 
 
 @mcp.tool()
+def list_databases(include_collections: bool = True) -> dict:
+    """List MongoDB databases, optionally including collections for each database."""
+    return database_handlers.list_databases(include_collections)
+
+
+@mcp.tool()
 def list_collections(database: str = "users") -> dict:
     """List all MongoDB collections."""
     return database_handlers.list_collections(database)

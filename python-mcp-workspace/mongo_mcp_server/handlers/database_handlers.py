@@ -1,5 +1,5 @@
 from ..config import DEFAULT_DATABASE_NAME
-from ..mongo import get_database
+from ..mongo import get_database, list_database_names
 from ..serializers import to_jsonable
 from ..validators import (
     validate_collection_name,
@@ -7,6 +7,25 @@ from ..validators import (
     validate_create_collection_options,
     validate_database_name,
 )
+
+
+def list_databases(include_collections: bool = True) -> dict:
+    databases = list_database_names()
+
+    if not include_collections:
+        return {
+            "databases": databases,
+        }
+
+    return {
+        "databases": [
+            {
+                "database": database,
+                "collections": get_database(database).list_collection_names(),
+            }
+            for database in databases
+        ],
+    }
 
 
 def list_collections(database: str = DEFAULT_DATABASE_NAME) -> dict:

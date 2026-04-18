@@ -1,7 +1,7 @@
 [project]
 name = "python-mcp-workspace"
 version = "1.0.0"
-description = "Python MCP servers for MongoDB and local filesystem access"
+description = "Python MCP servers for MongoDB, local filesystem access, and Bitbucket operations"
 requires-python = ">=3.10"
 dependencies = [
   "mcp>=1.0.0",
