@@ -106,8 +106,8 @@ Add this config:
         "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
       ],
       "env": {
-        "BITBUCKET_URL": "https://bitbucket.axisb.com",
-        "BITBUCKET_USERNAME": "FC607387",
+        "BITBUCKET_URL": "https://bitbucket.<DOMAIN>.com",
+        "BITBUCKET_USERNAME": "<ID>",
         "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password",
         "REPOSITORIES_ROOT": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
       }
@@ -178,8 +178,8 @@ In IntelliJ IDEA:
         "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
       ],
       "env": {
-        "BITBUCKET_URL": "https://bitbucket.axisb.com",
-        "BITBUCKET_USERNAME": "FC607387",
+        "BITBUCKET_URL": "https://bitbucket.<DOMAIN>.com",
+        "BITBUCKET_USERNAME": "<ID>",
         "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password",
         "REPOSITORIES_ROOT": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
       }
@@ -288,8 +288,8 @@ The Bitbucket server uses Bitbucket Cloud REST API credentials. Configure either
 or:
 
 ```json
-"BITBUCKET_URL": "https://bitbucket.axisb.com",
-"BITBUCKET_USERNAME": "FC607387",
+"BITBUCKET_URL": "https://bitbucket.<DOMAIN>.com",
+"BITBUCKET_USERNAME": "<ID>",
 "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password"
 ```
 
@@ -372,8 +372,8 @@ If the file is empty, use this full config:
         "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
       ],
       "env": {
-        "BITBUCKET_URL": "https://bitbucket.axisb.com",
-        "BITBUCKET_USERNAME": "FC607387",
+        "BITBUCKET_URL": "https://bitbucket.<DOMAIN>.com",
+        "BITBUCKET_USERNAME": "<ID>",
         "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password",
         "REPOSITORIES_ROOT": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
       }
@@ -492,8 +492,8 @@ Add Bitbucket MCP:
 
 ```bash
 codex mcp add bitbucket-mcp-python \
-  --env BITBUCKET_URL=https://bitbucket.axisb.com \
-  --env BITBUCKET_USERNAME=FC607387 \
+  --env BITBUCKET_URL=https://bitbucket.<DOMAIN>.com \
+  --env BITBUCKET_USERNAME=<ID> \
   --env BITBUCKET_APP_PASSWORD=your-bitbucket-app-password \
   --env REPOSITORIES_ROOT=/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace \
   -- /Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/.venv/bin/python \
@@ -533,8 +533,8 @@ args = ["/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mc
 
 [mcp_servers.bitbucket-mcp-python.env]
 BITBUCKET_APP_PASSWORD = "your-bitbucket-app-password"
-BITBUCKET_URL = "https://bitbucket.axisb.com"
-BITBUCKET_USERNAME = "FC607387"
+BITBUCKET_URL = "https://bitbucket.<DOMAIN>.com"
+BITBUCKET_USERNAME = "<ID>"
 REPOSITORIES_ROOT = "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
 ```
 

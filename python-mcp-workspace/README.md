@@ -45,8 +45,8 @@ The Bitbucket server supports either an access token or a username plus app
 password.
 
 ```bash
-export BITBUCKET_URL="https://bitbucket.axisb.com"
-export BITBUCKET_USERNAME="FC607387"
+export BITBUCKET_URL="https://bitbucket.<DOMAIN>.com"
+export BITBUCKET_USERNAME="<ID>"
 export BITBUCKET_APP_PASSWORD="your-bitbucket-app-password"
 export REPOSITORIES_ROOT="/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
 ```
@@ -95,8 +95,8 @@ Add these entries inside `mcpServers`:
         "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace/python-mcp-workspace/bitbucket_server.py"
       ],
       "env": {
-        "BITBUCKET_URL": "https://bitbucket.axisb.com",
-        "BITBUCKET_USERNAME": "FC607387",
+        "BITBUCKET_URL": "https://bitbucket.<DOMAIN>.com",
+        "BITBUCKET_USERNAME": "<ID>",
         "BITBUCKET_APP_PASSWORD": "your-bitbucket-app-password",
         "REPOSITORIES_ROOT": "/Users/rajkaran.01/Desktop/mcp-server-workspace/mcp-workspace"
       }
